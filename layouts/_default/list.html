@@ -32,6 +32,8 @@
         {{ else }}
           {{ if .Truncated }}
             {{ .Summary | markdownify }}
+          {{ else }}
+            {{ .Content }}
           {{ end }}
         {{ end }}
       </div>
